@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#registration-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#chat-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e6f7ff;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.message.username-a {
+    background-color: #cce5ff; /* Light blue for user A */
+    align-self: flex-start; /* Align to left */
+}
+
+.message.username-b {
+    background-color: #d4edda; /* Light green for user B */
+    align-self: flex-end; /* Align to right */
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+h2 {
+    color: #007bff; /* Heading color */
+}
+
+#usernameInput {
+    width: calc(100% - 22px); /* Full width */
+}
+
+#chat-container {
+    position: relative;
+}
+
+#sendButton {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
